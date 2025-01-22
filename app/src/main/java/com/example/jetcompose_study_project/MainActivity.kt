@@ -39,13 +39,12 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     topBar = {
                         TopAppBar(
-                            title = { Text("My App") },
-                            navigationIcon = {
-                                IconButton(onClick = { /* Handle back navigation */ }) {
-                                    Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
-                                }
-                            }
-                        )
+                            title = {
+                                Text(
+                                    text = "Jetpack Compose",
+                                    modifier = Modifier.fillMaxSize(),
+                                    textAlign = TextAlign.Center
+                        )})
                     },
                     content = { padding ->
                         Greeting("Android", Modifier.padding(padding))
